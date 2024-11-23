@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muslim Economy Umbrella Fund</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+</head>
+<body>
+  <header>
+    <h1>Muslim Economy Umbrella Fund</h1>
+  </header>
+
+  <main>
+    <!-- User Authentication -->
+    <section id="auth-section">
+      <h2>Sign Up / Login</h2>
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <button onclick="signUp()">Sign Up</button>
+      <button onclick="signIn()">Login</button>
+    </section>
+
+    <!-- Add Portfolio -->
+    <section id="portfolio-section" class="hidden">
+      <h2>Add Investment Portfolio</h2>
+      <input id="amount" type="number" placeholder="Investment Amount">
+      <input id="duration" type="number" placeholder="Duration (Months)">
+      <button onclick="addPortfolio()">Add Portfolio</button>
+    </section>
+
+    <!-- Portfolio List -->
+    <section id="portfolio-list" class="hidden">
+      <h2>Your Portfolios</h2>
+      <ul id="portfolio-display"></ul>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
